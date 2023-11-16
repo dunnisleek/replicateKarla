@@ -13,7 +13,7 @@
 <style>
  nav{
        position: absolute;
-       left: 10rem;
-      top: 4rem;
+       left: 10rem; 
+       top: 4rem;
  }
 </style>

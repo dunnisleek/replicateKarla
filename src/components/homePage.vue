@@ -1,7 +1,11 @@
 <template>
   <div class="container">
   <div class="wrapper">
-    <div class="column contentbox">
+    <div class="left-side  contentbox">
+      <div class="section-content">
+        <div class="logo">
+        <img  src="../assets/brand-logo.svg"/>
+      </div>
       <h1>MOBILE POS</h1>
       <h2>Contactless payments built for Africa.</h2>
       <p>We are building a platform that truly enables businesses go mobile by empowering them with tools to 
@@ -11,10 +15,10 @@
           <input type="text" placeholder="Email Address" required/>
           <button>Get Early Access</button>
         </form>
-
+      </div>
       <div class="footerBtn" @click="showMe">learn about the team <span><img src="../assets/download.svg"/></span></div>
     </div>
-    <div class="column rightimg">
+    <div class="right-side  rightimg">
       <img src="../assets/hero-bg.023af3b.png"/>
     </div>
  
@@ -49,39 +53,43 @@ import visionNee from './visionNee.vue';
 </script>
 
 <style scoped>
-  .container{
-   /* max-width: 1400px; */
-   border:5px solid white;
-   margin: auto;
-   margin-top:10px;
+ .logo {
+    position: fixed;
+    top: 4rem;
+    width: 100%; /* Optional: Make the logo span the full width of the viewport */
+
   }
+
+.left-side{
+  max-width: 485px;
+    width: 300px;
+    margin: 0 auto;
+}
+  
  .wrapper{
   /* margin: 0 auto; */
   background: #FEF1E0;
   display:flex;
-  justify-content: space-between;
-  
-  border-radius: 30px;
   align-items: center;
-  gap:60px;
-  height:90vh;
-  padding:2rem 1rem; 
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 30px;
+  padding:20px; 
+  max-height:93vh;
   
  }
-
- .rightimg{
-  flex:1;
- }
+.right-side{
+  width:50%
+}
  .rightimg img{
-  width:95%;
-  position: relative;
-  left:35px;
-  /* height:70%; */
+  width:100%;
+  height:93vh;
+ 
  }
  .contentbox{
   
-    width: 35%;
-    padding-left: 120px;
+    width: 50%;
+  
 }
  .contentbox h2{
   font-size:45px;
@@ -100,9 +108,10 @@ import visionNee from './visionNee.vue';
  }
 /* footer button */
 .footerBtn{
-  position: absolute;
-  /* top:0; */
-  bottom: 0;
+  
+  position:relative;
+  top:12rem;
+  
   color:#e78400;
   font-family: 'Titillium Web', sans-serif;
   font-size:14px;
@@ -153,4 +162,5 @@ form input{
 Color:#66687e;
 outline:none;
 }
+
 </style>
