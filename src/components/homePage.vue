@@ -162,5 +162,121 @@ form input{
 Color:#66687e;
 outline:none;
 }
+html{
+  scroll-behavior: smooth;
+}
 
+
+@media screen and (max-width: 960px) {
+ .wrapper {
+    /* background: rebeccapurple; */
+  }
+  .contentbox p{
+    width: 300px;
+}
+.contentbox h2{
+  font-size:25px;
+  line-height:30px;
+  max-width:350px;
+}
+.logo{
+  position: relative;
+  top:0;
+
+}
+.logo img{
+  width: 150px;
+}
+form input{
+  max-width:300px;
+  padding:10px;
+}
+form button{
+  padding:10px;
+  top:0;
+  left:13rem;
+  font-size:12px;
+}
+}
+@media screen and (max-width:390px ){
+.wrapper{
+  display:flex;
+  flex-direction: column;
+}
+.logo img{
+  padding-top:40px;
+}
+.left-side contentbox{
+  margin:0;
+  width:100%;
+}
+.contentbox{
+  width:100%;
+  padding: 5rem  1rem;
+  padding-bottom: 0rem;
+}
+.footerBtn{
+  top:0;
+  padding-top: 10px;
+}
+form input{
+  max-width:250px;
+}
+.section-content{
+  max-width:250px;
+}
+.right-side{
+  width:100%;
+}
+.rightimg img{
+  height:40vh;
+}
+form button{
+      padding: 7px;
+    top: 2px;
+    left: 10rem;
+    font-size: 12px;
+}
+};
+@media screen and (max-width:768px ){
+  .rightimg img{
+  height:50vh;
+}
+}
+@media screen and (max-width:820px ){
+  .rightimg img{
+  height:50vh;
+}
+}
+@media screen and (max-width:1024px ){
+  .contentbox h2{
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 350px;
+}
+.contentbox{
+  max-width:200px;
+}
+.contentbox p{
+   max-width:256px;
+      font-size: 15px;
+    line-height: 20px;
+}
+form input{
+    max-width: 200px;
+    padding: 5px;
+}
+form button{
+    padding: 2px;
+    top: 0;
+    left: 8rem;
+    font-size: 10px;
+
+}
+.footerBtn{
+  top:0;
+  padding-bottom: 0px;
+  margin-top:10rem;
+}
+}
 </style>
